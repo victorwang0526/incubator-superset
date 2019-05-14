@@ -1047,6 +1047,31 @@ class BigNumberViz(BaseViz):
         self.form_data['metric'] = metric
         return d
 
+class BarEchartsViz(BaseViz):
+
+    """Echarts Bar"""
+
+    viz_type = 'echarts_bar'
+    verbose_name = _('Echarts Bar View')
+
+    # def query_obj(self):
+    #     # d = super().query_obj()
+    #     # metric = self.form_data.get('metric')
+    #     # if not metric:
+    #     #     raise Exception(_('Pick a metric!'))
+    #     # d['metrics'] = [self.form_data.get('metric')]
+    #     # self.form_data['metric'] = metric
+    #     # return d
+    #     return None
+
+    # def get_df(self, df):
+    #     return super().get_df(df)
+
+    # def get_data(self, df):
+    #     app.logger.debug('=========== df: %s', df)
+    #     return dict(
+    #         data=list(df.data)
+    #     )
 
 class BigNumberTotalViz(BaseViz):
 

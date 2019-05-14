@@ -40,6 +40,7 @@ import CommonChartPreset from './CommonChartPreset';
 import DeckGLChartPreset from './DeckGLChartPreset';
 import HierarchyChartPreset from './HierarchyChartPreset';
 import MapChartPreset from './MapChartPreset';
+import EchartsChartPreset from './EchartsChartPreset';
 
 export default class LegacyChartPreset extends Preset {
   constructor() {
@@ -50,6 +51,7 @@ export default class LegacyChartPreset extends Preset {
         new DeckGLChartPreset(),
         new HierarchyChartPreset(),
         new MapChartPreset(),
+        new EchartsChartPreset(),
       ],
       plugins: [
         new BulletChartPlugin().configure({ key: 'bullet' }),
